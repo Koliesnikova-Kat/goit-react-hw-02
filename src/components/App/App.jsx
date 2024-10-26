@@ -9,15 +9,6 @@ export default function App() {
     
     const savedClicks = window.localStorage.getItem("saved-clicks");
     
-    // try {
-    //   return savedClicks
-    //     ? JSON.parse(savedClicks)
-    //     : { good: 0, neutral: 0, bad: 0 };
-    // } catch (e) {
-    //   console.error("Error parsing saved clicks:", e);
-    //   return { good: 0, neutral: 0, bad: 0 };
-    // }
-    
     return savedClicks && savedClicks !== "undefined"
       ? JSON.parse(savedClicks)
       : { good: 0, neutral: 0, bad: 0 };
