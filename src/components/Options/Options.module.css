@@ -1,0 +1,11 @@
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: rgb(198, 191, 191);
+  border-color: black;
+}
