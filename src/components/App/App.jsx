@@ -46,6 +46,7 @@ export default function App() {
       <Options
         update={updateFeedback}
         reset={totalFeedback > 0 ? resetFeedback : null}
+        feedbackCount={totalFeedback}
       />
 
       {totalFeedback > 0 ? (

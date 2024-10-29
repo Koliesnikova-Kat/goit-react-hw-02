@@ -1,6 +1,6 @@
 import style from "./Options.module.css";
 
-export default function Options({ update, reset }) {
+export default function Options({ update, reset, feedbackCount }) {
   return (
     <section className={style.buttons}>
       <button
@@ -24,7 +24,7 @@ export default function Options({ update, reset }) {
       >
         Bad
       </button>
-      {reset && (
+      {feedbackCount > 0 && (
         <button type='button' className={style.button} onClick={reset}>
           Reset
         </button>
